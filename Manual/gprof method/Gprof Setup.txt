@@ -1,0 +1,7 @@
+// gprof
+
+g++ -o example example.cpp -pg
+./example          // it will create gmon.out
+gprof example gmon.out > analysis.txt 
+
+//

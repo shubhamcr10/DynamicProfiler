@@ -1,0 +1,17 @@
+sudo apt-get install linux-tools-6.5.0-14-generic linux-cloud-tools-6.5.0-14-generic
+sudo apt-get install linux-tools-generic linux-cloud-tools-generic
+
+cat /proc/sys/kernel/perf_event_paranoid
+sudo sysctl -w kernel.perf_event_paranoid=-1
+echo "kernel.perf_event_paranoid = -1" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
+
+g++ -o example -pg time.cpp
+sudo perf record -o perf.data ./example
+
+sudo perf record -o perf.data -ag -- sleep 30 //dont use
+
+sudo perf record -o perf.data -e cpu-clock,cache-misses -g -- ./example  //modify the parameters like cpu-clock etc from net
+sudo perf script | ~/FlameGraph/stackcollapse-perf.pl | ~/FlameGraph/flamegraph.pl > perf.svg
+

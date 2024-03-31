@@ -1,0 +1,6 @@
+scp /home/jangoo/Downloads/DynamicProfiling/VideoInterface\ for\ graph/debug/conan_package/bin/video_interface  root@10.42.0.80:/home/root/profiling/
+
+scp root@10.42.0.80:/home/root/profiling/callgrind.out /home/jangoo/Downloads/Testing\ Hardware/
+
+
+

@@ -1,0 +1,606 @@
+                0.00    0.00       3/43          void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+                0.00    0.00       4/43          std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+                0.00    0.00       4/43          void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+                0.00    0.00       4/43          void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+                0.00    0.00       4/43          std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+                0.00    0.00       4/43          std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+                0.00    0.00       4/43          std::thread::_Invoker<std::tuple<void (*)(int), int> >::_Invoker<void (&)(int), int&>(void (&)(int), int&) [73]
+                0.00    0.00       4/43          std::tuple<void (*)(int), int>::tuple<void (&)(int), int&, true>(void (&)(int), int&) [67]
+                0.00    0.00       4/43          std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+                0.00    0.00       4/43          std::_Tuple_impl<1ul, int>::_Tuple_impl<int&>(int&) [62]
+                0.00    0.00       4/43          std::_Head_base<1ul, int, false>::_Head_base<int&>(int&) [54]
+[8]      0.0    0.00    0.00      43         int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+-----------------------------------------------
+                0.00    0.00       3/35          void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+                0.00    0.00       4/35          std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+                0.00    0.00       4/35          void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+                0.00    0.00       4/35          void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+                0.00    0.00       4/35          std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+                0.00    0.00       4/35          std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+                0.00    0.00       4/35          std::thread::_Invoker<std::tuple<void (*)(int), int> >::_Invoker<void (&)(int), int&>(void (&)(int), int&) [73]
+                0.00    0.00       4/35          std::tuple<void (*)(int), int>::tuple<void (&)(int), int&, true>(void (&)(int), int&) [67]
+                0.00    0.00       4/35          std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+[9]      0.0    0.00    0.00      35         void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+-----------------------------------------------
+                0.00    0.00       6/22          void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+                0.00    0.00       6/22          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::difference_type __gnu_cxx::operator-<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&, __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&) [90]
+                0.00    0.00      10/22          bool __gnu_cxx::operator!=<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&, __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&) [44]
+[10]     0.0    0.00    0.00      22         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::base() const [10]
+-----------------------------------------------
+                0.00    0.00      18/18          std::thread* std::__relocate_a<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [40]
+[11]     0.0    0.00    0.00      18         std::thread* std::__niter_base<std::thread*>(std::thread*) [11]
+-----------------------------------------------
+                0.00    0.00       4/16          std::vector<std::thread, std::allocator<std::thread> >::begin() [78]
+                0.00    0.00       4/16          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator-(long) const [48]
+                0.00    0.00       8/16          std::vector<std::thread, std::allocator<std::thread> >::end() [24]
+[12]     0.0    0.00    0.00      16         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::__normal_iterator(std::thread* const&) [12]
+-----------------------------------------------
+                0.00    0.00       3/14          std::thread::thread(std::thread&&) [98]
+                0.00    0.00       4/14          std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+                0.00    0.00       7/14          std::thread::joinable() const [28]
+[13]     0.0    0.00    0.00      14         std::thread::id::id() [13]
+-----------------------------------------------
+                0.00    0.00       3/13          void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+                0.00    0.00       4/13          void std::_Destroy_aux<false>::__destroy<std::thread*>(std::thread*, std::thread*) [109]
+                0.00    0.00       6/13          std::thread* std::__relocate_a_1<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [41]
+[14]     0.0    0.00    0.00      13         std::thread* std::__addressof<std::thread>(std::thread&) [14]
+-----------------------------------------------
+                0.00    0.00      12/12          std::vector<std::thread, std::allocator<std::thread> >::_M_check_len(unsigned long, char const*) const [91]
+[15]     0.0    0.00    0.00      12         std::vector<std::thread, std::allocator<std::thread> >::size() const [15]
+-----------------------------------------------
+                0.00    0.00       4/12          std::tuple_element<0ul, std::tuple<void (*)(int), int> >::type&& std::get<0ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [82]
+                0.00    0.00       4/12          std::__invoke_result<void (*)(int), int>::type std::__invoke<void (*)(int), int>(void (*&&)(int), int&&) [85]
+                0.00    0.00       4/12          void std::__invoke_impl<void, void (*)(int), int>(std::__invoke_other, void (*&&)(int), int&&) [81]
+[16]     0.0    0.00    0.00      12         void (*&&std::forward<void (*)(int)>(std::remove_reference<void (*)(int)>::type&))(int) [16]
+-----------------------------------------------
+                0.00    0.00       4/12          std::tuple_element<1ul, std::tuple<void (*)(int), int> >::type&& std::get<1ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [83]
+                0.00    0.00       4/12          std::__invoke_result<void (*)(int), int>::type std::__invoke<void (*)(int), int>(void (*&&)(int), int&&) [85]
+                0.00    0.00       4/12          void std::__invoke_impl<void, void (*)(int), int>(std::__invoke_other, void (*&&)(int), int&&) [81]
+[17]     0.0    0.00    0.00      12         int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       3/9           __gnu_cxx::new_allocator<std::thread>::allocate(unsigned long, void const*) [88]
+                0.00    0.00       6/9           __gnu_cxx::new_allocator<std::thread>::max_size() const [33]
+[18]     0.0    0.00    0.00       9         __gnu_cxx::new_allocator<std::thread>::_M_max_size() const [18]
+-----------------------------------------------
+                0.00    0.00       9/9           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::thread::id> >, std::is_move_constructible<std::thread::id>, std::is_move_assignable<std::thread::id> >::value, void>::type std::swap<std::thread::id>(std::thread::id&, std::thread::id&) [103]
+[19]     0.0    0.00    0.00       9         std::remove_reference<std::thread::id&>::type&& std::move<std::thread::id&>(std::thread::id&) [19]
+-----------------------------------------------
+                0.00    0.00       4/8           main [6]
+                0.00    0.00       4/8           std::vector<std::thread, std::allocator<std::thread> >::back() [77]
+[20]     0.0    0.00    0.00       8         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator*() const [20]
+-----------------------------------------------
+                0.00    0.00       8/8           std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_M_head(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [22]
+[21]     0.0    0.00    0.00       8         std::_Head_base<0ul, std::thread::_State*, false>::_M_head(std::_Head_base<0ul, std::thread::_State*, false>&) [21]
+-----------------------------------------------
+                0.00    0.00       8/8           std::thread::_State*& std::__get_helper<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [25]
+[22]     0.0    0.00    0.00       8         std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_M_head(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [22]
+                0.00    0.00       8/8           std::_Head_base<0ul, std::thread::_State*, false>::_M_head(std::_Head_base<0ul, std::thread::_State*, false>&) [21]
+-----------------------------------------------
+                0.00    0.00       4/8           std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr() [56]
+                0.00    0.00       4/8           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::__uniq_ptr_impl(std::thread::_State*) [65]
+[23]     0.0    0.00    0.00       8         std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::_M_ptr() [23]
+                0.00    0.00       8/8           std::tuple_element<0ul, std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> > >::type& std::get<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >&) [26]
+-----------------------------------------------
+                0.00    0.00       1/8           main [6]
+                0.00    0.00       3/8           std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+                0.00    0.00       4/8           std::vector<std::thread, std::allocator<std::thread> >::back() [77]
+[24]     0.0    0.00    0.00       8         std::vector<std::thread, std::allocator<std::thread> >::end() [24]
+                0.00    0.00       8/16          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::__normal_iterator(std::thread* const&) [12]
+-----------------------------------------------
+                0.00    0.00       8/8           std::tuple_element<0ul, std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> > >::type& std::get<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >&) [26]
+[25]     0.0    0.00    0.00       8         std::thread::_State*& std::__get_helper<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [25]
+                0.00    0.00       8/8           std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_M_head(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [22]
+-----------------------------------------------
+                0.00    0.00       8/8           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::_M_ptr() [23]
+[26]     0.0    0.00    0.00       8         std::tuple_element<0ul, std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> > >::type& std::get<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >&) [26]
+                0.00    0.00       8/8           std::thread::_State*& std::__get_helper<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >(std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >&) [25]
+-----------------------------------------------
+                0.00    0.00       8/8           void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+[27]     0.0    0.00    0.00       8         std::remove_reference<std::tuple<void (*)(int), int>&>::type&& std::move<std::tuple<void (*)(int), int>&>(std::tuple<void (*)(int), int>&) [27]
+-----------------------------------------------
+                0.00    0.00       7/7           std::thread::~thread() [30]
+[28]     0.0    0.00    0.00       7         std::thread::joinable() const [28]
+                0.00    0.00       7/14          std::thread::id::id() [13]
+                0.00    0.00       7/7           std::operator==(std::thread::id, std::thread::id) [31]
+-----------------------------------------------
+                0.00    0.00       1/7           std::vector<std::thread, std::allocator<std::thread> >::~vector() [116]
+                0.00    0.00       6/7           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[29]     0.0    0.00    0.00       7         std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_get_Tp_allocator() [29]
+-----------------------------------------------
+                0.00    0.00       3/7           void __gnu_cxx::new_allocator<std::thread>::destroy<std::thread>(std::thread*) [87]
+                0.00    0.00       4/7           void std::_Destroy<std::thread>(std::thread*) [84]
+[30]     0.0    0.00    0.00       7         std::thread::~thread() [30]
+                0.00    0.00       7/7           std::thread::joinable() const [28]
+-----------------------------------------------
+                0.00    0.00       7/7           std::thread::joinable() const [28]
+[31]     0.0    0.00    0.00       7         std::operator==(std::thread::id, std::thread::id) [31]
+-----------------------------------------------
+                0.00    0.00       3/7           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, std::thread>(std::thread*, std::thread&&) [89]
+                0.00    0.00       4/7           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+[32]     0.0    0.00    0.00       7         operator new(unsigned long, void*) [32]
+-----------------------------------------------
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<std::thread> >::max_size(std::allocator<std::thread> const&) [36]
+[33]     0.0    0.00    0.00       6         __gnu_cxx::new_allocator<std::thread>::max_size() const [33]
+                0.00    0.00       6/9           __gnu_cxx::new_allocator<std::thread>::_M_max_size() const [18]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::max_size() const [35]
+[34]     0.0    0.00    0.00       6         std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_get_Tp_allocator() const [34]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_M_check_len(unsigned long, char const*) const [91]
+[35]     0.0    0.00    0.00       6         std::vector<std::thread, std::allocator<std::thread> >::max_size() const [35]
+                0.00    0.00       6/6           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_get_Tp_allocator() const [34]
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_max_size(std::allocator<std::thread> const&) [37]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_max_size(std::allocator<std::thread> const&) [37]
+[36]     0.0    0.00    0.00       6         std::allocator_traits<std::allocator<std::thread> >::max_size(std::allocator<std::thread> const&) [36]
+                0.00    0.00       6/6           __gnu_cxx::new_allocator<std::thread>::max_size() const [33]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::max_size() const [35]
+[37]     0.0    0.00    0.00       6         std::vector<std::thread, std::allocator<std::thread> >::_S_max_size(std::allocator<std::thread> const&) [37]
+                0.00    0.00       6/6           std::allocator_traits<std::allocator<std::thread> >::max_size(std::allocator<std::thread> const&) [36]
+                0.00    0.00       6/6           unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [42]
+-----------------------------------------------
+                0.00    0.00       6/6           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[38]     0.0    0.00    0.00       6         std::vector<std::thread, std::allocator<std::thread> >::_S_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [38]
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_do_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&, std::integral_constant<bool, true>) [39]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [38]
+[39]     0.0    0.00    0.00       6         std::vector<std::thread, std::allocator<std::thread> >::_S_do_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&, std::integral_constant<bool, true>) [39]
+                0.00    0.00       6/6           std::thread* std::__relocate_a<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [40]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_do_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&, std::integral_constant<bool, true>) [39]
+[40]     0.0    0.00    0.00       6         std::thread* std::__relocate_a<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [40]
+                0.00    0.00      18/18          std::thread* std::__niter_base<std::thread*>(std::thread*) [11]
+                0.00    0.00       6/6           std::thread* std::__relocate_a_1<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [41]
+-----------------------------------------------
+                0.00    0.00       6/6           std::thread* std::__relocate_a<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [40]
+[41]     0.0    0.00    0.00       6         std::thread* std::__relocate_a_1<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [41]
+                0.00    0.00       6/13          std::thread* std::__addressof<std::thread>(std::thread&) [14]
+                0.00    0.00       3/3           void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+-----------------------------------------------
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_max_size(std::allocator<std::thread> const&) [37]
+[42]     0.0    0.00    0.00       6         unsigned long const& std::min<unsigned long>(unsigned long const&, unsigned long const&) [42]
+-----------------------------------------------
+                0.00    0.00       3/6           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, std::thread>(std::allocator<std::thread>&, std::thread*, std::thread&&) [96]
+                0.00    0.00       3/6           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, std::thread>(std::thread*, std::thread&&) [89]
+[43]     0.0    0.00    0.00       6         std::thread&& std::forward<std::thread>(std::remove_reference<std::thread>::type&) [43]
+-----------------------------------------------
+                0.00    0.00       5/5           main [6]
+[44]     0.0    0.00    0.00       5         bool __gnu_cxx::operator!=<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&, __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&) [44]
+                0.00    0.00      10/22          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::base() const [10]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::__invoke_impl<void, void (*)(int), int>(std::__invoke_other, void (*&&)(int), int&&) [81]
+[45]     0.0    0.00    0.00       4         parallelFunction(int) [45]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+[46]     0.0    0.00    0.00       4         void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/7           operator new(unsigned long, void*) [32]
+                0.00    0.00       4/4           std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+-----------------------------------------------
+                0.00    0.00       4/4           main [6]
+[47]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator++() [47]
+-----------------------------------------------
+                0.00    0.00       4/4           std::vector<std::thread, std::allocator<std::thread> >::back() [77]
+[48]     0.0    0.00    0.00       4         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator-(long) const [48]
+                0.00    0.00       4/16          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::__normal_iterator(std::thread* const&) [12]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, void (*)(int), int>::_M_head(std::_Tuple_impl<0ul, void (*)(int), int>&) [57]
+[49]     0.0    0.00    0.00       4         std::_Head_base<0ul, void (*)(int), false>::_M_head(std::_Head_base<0ul, void (*)(int), false>&) [49]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+[50]     0.0    0.00    0.00       4         std::_Head_base<0ul, void (*)(int), false>::_Head_base(void (* const&)(int)) [50]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_Tuple_impl() [59]
+[51]     0.0    0.00    0.00       4         std::_Head_base<0ul, std::thread::_State*, false>::_Head_base() [51]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, std::default_delete<std::thread::_State> >::_Tuple_impl() [60]
+[52]     0.0    0.00    0.00       4         std::_Head_base<1ul, std::default_delete<std::thread::_State>, true>::_Head_base() [52]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, int>::_M_head(std::_Tuple_impl<1ul, int>&) [61]
+[53]     0.0    0.00    0.00       4         std::_Head_base<1ul, int, false>::_M_head(std::_Head_base<1ul, int, false>&) [53]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, int>::_Tuple_impl<int&>(int&) [62]
+[54]     0.0    0.00    0.00       4         std::_Head_base<1ul, int, false>::_Head_base<int&>(int&) [54]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+[55]     0.0    0.00    0.00       4         std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::unique_ptr<std::default_delete<std::thread::_State>, void>(std::thread::_State*) [55]
+                0.00    0.00       4/4           std::__uniq_ptr_data<std::thread::_State, std::default_delete<std::thread::_State>, true, true>::__uniq_ptr_impl(std::thread::_State*) [64]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+[56]     0.0    0.00    0.00       4         std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr() [56]
+                0.00    0.00       4/8           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::_M_ptr() [23]
+-----------------------------------------------
+                0.00    0.00       4/4           void (*&std::__get_helper<0ul, void (*)(int), int>(std::_Tuple_impl<0ul, void (*)(int), int>&))(int) [79]
+[57]     0.0    0.00    0.00       4         std::_Tuple_impl<0ul, void (*)(int), int>::_M_head(std::_Tuple_impl<0ul, void (*)(int), int>&) [57]
+                0.00    0.00       4/4           std::_Head_base<0ul, void (*)(int), false>::_M_head(std::_Head_base<0ul, void (*)(int), false>&) [49]
+-----------------------------------------------
+                0.00    0.00       4/4           std::tuple<void (*)(int), int>::tuple<void (&)(int), int&, true>(void (&)(int), int&) [67]
+[58]     0.0    0.00    0.00       4         std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, int>::_Tuple_impl<int&>(int&) [62]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/4           std::_Head_base<0ul, void (*)(int), false>::_Head_base(void (* const&)(int)) [50]
+-----------------------------------------------
+                0.00    0.00       4/4           std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >::tuple<true, true>() [68]
+[59]     0.0    0.00    0.00       4         std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_Tuple_impl() [59]
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, std::default_delete<std::thread::_State> >::_Tuple_impl() [60]
+                0.00    0.00       4/4           std::_Head_base<0ul, std::thread::_State*, false>::_Head_base() [51]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_Tuple_impl() [59]
+[60]     0.0    0.00    0.00       4         std::_Tuple_impl<1ul, std::default_delete<std::thread::_State> >::_Tuple_impl() [60]
+                0.00    0.00       4/4           std::_Head_base<1ul, std::default_delete<std::thread::_State>, true>::_Head_base() [52]
+-----------------------------------------------
+                0.00    0.00       4/4           int& std::__get_helper<1ul, int>(std::_Tuple_impl<1ul, int>&) [80]
+[61]     0.0    0.00    0.00       4         std::_Tuple_impl<1ul, int>::_M_head(std::_Tuple_impl<1ul, int>&) [61]
+                0.00    0.00       4/4           std::_Head_base<1ul, int, false>::_M_head(std::_Head_base<1ul, int, false>&) [53]
+-----------------------------------------------
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+[62]     0.0    0.00    0.00       4         std::_Tuple_impl<1ul, int>::_Tuple_impl<int&>(int&) [62]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/4           std::_Head_base<1ul, int, false>::_Head_base<int&>(int&) [54]
+-----------------------------------------------
+                0.00    0.00       1/4           std::_Vector_base<std::thread, std::allocator<std::thread> >::~_Vector_base() [114]
+                0.00    0.00       3/4           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[63]     0.0    0.00    0.00       4         std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_deallocate(std::thread*, unsigned long) [63]
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<std::thread> >::deallocate(std::allocator<std::thread>&, std::thread*, unsigned long) [93]
+-----------------------------------------------
+                0.00    0.00       4/4           std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::unique_ptr<std::default_delete<std::thread::_State>, void>(std::thread::_State*) [55]
+[64]     0.0    0.00    0.00       4         std::__uniq_ptr_data<std::thread::_State, std::default_delete<std::thread::_State>, true, true>::__uniq_ptr_impl(std::thread::_State*) [64]
+                0.00    0.00       4/4           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::__uniq_ptr_impl(std::thread::_State*) [65]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__uniq_ptr_data<std::thread::_State, std::default_delete<std::thread::_State>, true, true>::__uniq_ptr_impl(std::thread::_State*) [64]
+[65]     0.0    0.00    0.00       4         std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::__uniq_ptr_impl(std::thread::_State*) [65]
+                0.00    0.00       4/4           std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >::tuple<true, true>() [68]
+                0.00    0.00       4/8           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::_M_ptr() [23]
+-----------------------------------------------
+                0.00    0.00       1/4           std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+                0.00    0.00       3/4           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[66]     0.0    0.00    0.00       4         void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/4           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_Invoker<std::tuple<void (*)(int), int> >::_Invoker<void (&)(int), int&>(void (&)(int), int&) [73]
+[67]     0.0    0.00    0.00       4         std::tuple<void (*)(int), int>::tuple<void (&)(int), int&, true>(void (&)(int), int&) [67]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, void (*)(int), int>::_Tuple_impl<void (&)(int), int&, void>(void (&)(int), int&) [58]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__uniq_ptr_impl<std::thread::_State, std::default_delete<std::thread::_State> >::__uniq_ptr_impl(std::thread::_State*) [65]
+[68]     0.0    0.00    0.00       4         std::tuple<std::thread::_State*, std::default_delete<std::thread::_State> >::tuple<true, true>() [68]
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, std::thread::_State*, std::default_delete<std::thread::_State> >::_Tuple_impl() [59]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+[69]     0.0    0.00    0.00       4         std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+                0.00    0.00       4/4           std::thread::_State::_State() [71]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/4           std::thread::_Invoker<std::tuple<void (*)(int), int> >::_Invoker<void (&)(int), int&>(void (&)(int), int&) [73]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::~_State_impl() [126]
+[70]     0.0    0.00    0.00       4         std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::~_State_impl() [70]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+[71]     0.0    0.00    0.00       4         std::thread::_State::_State() [71]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_Invoker<std::tuple<void (*)(int), int> >::operator()() [74]
+[72]     0.0    0.00    0.00       4         void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+                0.00    0.00       8/8           std::remove_reference<std::tuple<void (*)(int), int>&>::type&& std::move<std::tuple<void (*)(int), int>&>(std::tuple<void (*)(int), int>&) [27]
+                0.00    0.00       4/4           std::tuple_element<1ul, std::tuple<void (*)(int), int> >::type&& std::get<1ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [83]
+                0.00    0.00       4/4           std::tuple_element<0ul, std::tuple<void (*)(int), int> >::type&& std::get<0ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [82]
+                0.00    0.00       4/4           std::__invoke_result<void (*)(int), int>::type std::__invoke<void (*)(int), int>(void (*&&)(int), int&&) [85]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+[73]     0.0    0.00    0.00       4         std::thread::_Invoker<std::tuple<void (*)(int), int> >::_Invoker<void (&)(int), int&>(void (&)(int), int&) [73]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/4           std::tuple<void (*)(int), int>::tuple<void (&)(int), int&, true>(void (&)(int), int&) [67]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_M_run() [125]
+[74]     0.0    0.00    0.00       4         std::thread::_Invoker<std::tuple<void (*)(int), int> >::operator()() [74]
+                0.00    0.00       4/4           void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+-----------------------------------------------
+                0.00    0.00       4/4           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, void (&)(int), int&>(std::thread*, void (&)(int), int&) [46]
+[75]     0.0    0.00    0.00       4         std::thread::thread<void (&)(int), int&, void>(void (&)(int), int&) [75]
+                0.00    0.00       4/14          std::thread::id::id() [13]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/4           std::thread::_State_impl<std::thread::_Invoker<std::tuple<void (*)(int), int> > >::_State_impl<void (&)(int), int&>(void (&)(int), int&) [69]
+                0.00    0.00       4/4           std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::unique_ptr<std::default_delete<std::thread::_State>, void>(std::thread::_State*) [55]
+                0.00    0.00       4/4           std::unique_ptr<std::thread::_State, std::default_delete<std::thread::_State> >::~unique_ptr() [56]
+-----------------------------------------------
+                0.00    0.00       4/4           main [6]
+[76]     0.0    0.00    0.00       4         std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+                0.00    0.00       4/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       4/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       4/4           std::vector<std::thread, std::allocator<std::thread> >::back() [77]
+                0.00    0.00       3/8           std::vector<std::thread, std::allocator<std::thread> >::end() [24]
+                0.00    0.00       3/3           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+                0.00    0.00       1/4           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+-----------------------------------------------
+                0.00    0.00       4/4           std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+[77]     0.0    0.00    0.00       4         std::vector<std::thread, std::allocator<std::thread> >::back() [77]
+                0.00    0.00       4/8           std::vector<std::thread, std::allocator<std::thread> >::end() [24]
+                0.00    0.00       4/4           __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator-(long) const [48]
+                0.00    0.00       4/8           __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::operator*() const [20]
+-----------------------------------------------
+                0.00    0.00       1/4           main [6]
+                0.00    0.00       3/4           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[78]     0.0    0.00    0.00       4         std::vector<std::thread, std::allocator<std::thread> >::begin() [78]
+                0.00    0.00       4/16          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::__normal_iterator(std::thread* const&) [12]
+-----------------------------------------------
+                0.00    0.00       4/4           std::tuple_element<0ul, std::tuple<void (*)(int), int> >::type&& std::get<0ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [82]
+[79]     0.0    0.00    0.00       4         void (*&std::__get_helper<0ul, void (*)(int), int>(std::_Tuple_impl<0ul, void (*)(int), int>&))(int) [79]
+                0.00    0.00       4/4           std::_Tuple_impl<0ul, void (*)(int), int>::_M_head(std::_Tuple_impl<0ul, void (*)(int), int>&) [57]
+-----------------------------------------------
+                0.00    0.00       4/4           std::tuple_element<1ul, std::tuple<void (*)(int), int> >::type&& std::get<1ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [83]
+[80]     0.0    0.00    0.00       4         int& std::__get_helper<1ul, int>(std::_Tuple_impl<1ul, int>&) [80]
+                0.00    0.00       4/4           std::_Tuple_impl<1ul, int>::_M_head(std::_Tuple_impl<1ul, int>&) [61]
+-----------------------------------------------
+                0.00    0.00       4/4           std::__invoke_result<void (*)(int), int>::type std::__invoke<void (*)(int), int>(void (*&&)(int), int&&) [85]
+[81]     0.0    0.00    0.00       4         void std::__invoke_impl<void, void (*)(int), int>(std::__invoke_other, void (*&&)(int), int&&) [81]
+                0.00    0.00       4/12          void (*&&std::forward<void (*)(int)>(std::remove_reference<void (*)(int)>::type&))(int) [16]
+                0.00    0.00       4/4           parallelFunction(int) [45]
+                0.00    0.00       4/12          int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+[82]     0.0    0.00    0.00       4         std::tuple_element<0ul, std::tuple<void (*)(int), int> >::type&& std::get<0ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [82]
+                0.00    0.00       4/4           void (*&std::__get_helper<0ul, void (*)(int), int>(std::_Tuple_impl<0ul, void (*)(int), int>&))(int) [79]
+                0.00    0.00       4/12          void (*&&std::forward<void (*)(int)>(std::remove_reference<void (*)(int)>::type&))(int) [16]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+[83]     0.0    0.00    0.00       4         std::tuple_element<1ul, std::tuple<void (*)(int), int> >::type&& std::get<1ul, void (*)(int), int>(std::tuple<void (*)(int), int>&&) [83]
+                0.00    0.00       4/4           int& std::__get_helper<1ul, int>(std::_Tuple_impl<1ul, int>&) [80]
+                0.00    0.00       4/12          int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::_Destroy_aux<false>::__destroy<std::thread*>(std::thread*, std::thread*) [109]
+[84]     0.0    0.00    0.00       4         void std::_Destroy<std::thread>(std::thread*) [84]
+                0.00    0.00       4/7           std::thread::~thread() [30]
+-----------------------------------------------
+                0.00    0.00       4/4           void std::thread::_Invoker<std::tuple<void (*)(int), int> >::_M_invoke<0ul, 1ul>(std::_Index_tuple<0ul, 1ul>) [72]
+[85]     0.0    0.00    0.00       4         std::__invoke_result<void (*)(int), int>::type std::__invoke<void (*)(int), int>(void (*&&)(int), int&&) [85]
+                0.00    0.00       4/12          int&& std::forward<int>(std::remove_reference<int>::type&) [17]
+                0.00    0.00       4/12          void (*&&std::forward<void (*)(int)>(std::remove_reference<void (*)(int)>::type&))(int) [16]
+                0.00    0.00       4/4           void std::__invoke_impl<void, void (*)(int), int>(std::__invoke_other, void (*&&)(int), int&&) [81]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<std::thread> >::deallocate(std::allocator<std::thread>&, std::thread*, unsigned long) [93]
+[86]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::thread>::deallocate(std::thread*, unsigned long) [86]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::allocator_traits<std::allocator<std::thread> >::destroy<std::thread>(std::allocator<std::thread>&, std::thread*) [94]
+[87]     0.0    0.00    0.00       3         void __gnu_cxx::new_allocator<std::thread>::destroy<std::thread>(std::thread*) [87]
+                0.00    0.00       3/7           std::thread::~thread() [30]
+-----------------------------------------------
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<std::thread> >::allocate(std::allocator<std::thread>&, unsigned long) [95]
+[88]     0.0    0.00    0.00       3         __gnu_cxx::new_allocator<std::thread>::allocate(unsigned long, void const*) [88]
+                0.00    0.00       3/9           __gnu_cxx::new_allocator<std::thread>::_M_max_size() const [18]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, std::thread>(std::allocator<std::thread>&, std::thread*, std::thread&&) [96]
+[89]     0.0    0.00    0.00       3         void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, std::thread>(std::thread*, std::thread&&) [89]
+                0.00    0.00       3/6           std::thread&& std::forward<std::thread>(std::remove_reference<std::thread>::type&) [43]
+                0.00    0.00       3/7           operator new(unsigned long, void*) [32]
+                0.00    0.00       3/3           std::thread::thread(std::thread&&) [98]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[90]     0.0    0.00    0.00       3         __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::difference_type __gnu_cxx::operator-<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&, __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&) [90]
+                0.00    0.00       6/22          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::base() const [10]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[91]     0.0    0.00    0.00       3         std::vector<std::thread, std::allocator<std::thread> >::_M_check_len(unsigned long, char const*) const [91]
+                0.00    0.00      12/12          std::vector<std::thread, std::allocator<std::thread> >::size() const [15]
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::max_size() const [35]
+                0.00    0.00       3/3           unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [101]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+[92]     0.0    0.00    0.00       3         std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_allocate(unsigned long) [92]
+                0.00    0.00       3/3           std::allocator_traits<std::allocator<std::thread> >::allocate(std::allocator<std::thread>&, unsigned long) [95]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_deallocate(std::thread*, unsigned long) [63]
+[93]     0.0    0.00    0.00       3         std::allocator_traits<std::allocator<std::thread> >::deallocate(std::allocator<std::thread>&, std::thread*, unsigned long) [93]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::thread>::deallocate(std::thread*, unsigned long) [86]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+[94]     0.0    0.00    0.00       3         void std::allocator_traits<std::allocator<std::thread> >::destroy<std::thread>(std::allocator<std::thread>&, std::thread*) [94]
+                0.00    0.00       3/3           void __gnu_cxx::new_allocator<std::thread>::destroy<std::thread>(std::thread*) [87]
+-----------------------------------------------
+                0.00    0.00       3/3           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_allocate(unsigned long) [92]
+[95]     0.0    0.00    0.00       3         std::allocator_traits<std::allocator<std::thread> >::allocate(std::allocator<std::thread>&, unsigned long) [95]
+                0.00    0.00       3/3           __gnu_cxx::new_allocator<std::thread>::allocate(unsigned long, void const*) [88]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+[96]     0.0    0.00    0.00       3         void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, std::thread>(std::allocator<std::thread>&, std::thread*, std::thread&&) [96]
+                0.00    0.00       3/6           std::thread&& std::forward<std::thread>(std::remove_reference<std::thread>::type&) [43]
+                0.00    0.00       3/3           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, std::thread>(std::thread*, std::thread&&) [89]
+-----------------------------------------------
+                0.00    0.00       3/3           std::thread::thread(std::thread&&) [98]
+[97]     0.0    0.00    0.00       3         std::thread::swap(std::thread&) [97]
+                0.00    0.00       3/3           std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::thread::id> >, std::is_move_constructible<std::thread::id>, std::is_move_assignable<std::thread::id> >::value, void>::type std::swap<std::thread::id>(std::thread::id&, std::thread::id&) [103]
+-----------------------------------------------
+                0.00    0.00       3/3           void __gnu_cxx::new_allocator<std::thread>::construct<std::thread, std::thread>(std::thread*, std::thread&&) [89]
+[98]     0.0    0.00    0.00       3         std::thread::thread(std::thread&&) [98]
+                0.00    0.00       3/14          std::thread::id::id() [13]
+                0.00    0.00       3/3           std::thread::swap(std::thread&) [97]
+-----------------------------------------------
+                0.00    0.00       3/3           std::thread& std::vector<std::thread, std::allocator<std::thread> >::emplace_back<void (&)(int), int&>(void (&)(int), int&) [76]
+[99]     0.0    0.00    0.00       3         void std::vector<std::thread, std::allocator<std::thread> >::_M_realloc_insert<void (&)(int), int&>(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >, void (&)(int), int&) [99]
+                0.00    0.00       6/7           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_get_Tp_allocator() [29]
+                0.00    0.00       6/22          __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::base() const [10]
+                0.00    0.00       6/6           std::vector<std::thread, std::allocator<std::thread> >::_S_relocate(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [38]
+                0.00    0.00       3/3           std::vector<std::thread, std::allocator<std::thread> >::_M_check_len(unsigned long, char const*) const [91]
+                0.00    0.00       3/4           std::vector<std::thread, std::allocator<std::thread> >::begin() [78]
+                0.00    0.00       3/3           __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >::difference_type __gnu_cxx::operator-<std::thread*, std::vector<std::thread, std::allocator<std::thread> > >(__gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&, __gnu_cxx::__normal_iterator<std::thread*, std::vector<std::thread, std::allocator<std::thread> > > const&) [90]
+                0.00    0.00       3/3           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_allocate(unsigned long) [92]
+                0.00    0.00       3/43          int& std::forward<int&>(std::remove_reference<int&>::type&) [8]
+                0.00    0.00       3/35          void (&std::forward<void (&)(int)>(std::remove_reference<void (&)(int)>::type&))(int) [9]
+                0.00    0.00       3/4           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, void (&)(int), int&>(std::allocator<std::thread>&, std::thread*, void (&)(int), int&) [66]
+                0.00    0.00       3/4           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_deallocate(std::thread*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       3/3           std::thread* std::__relocate_a_1<std::thread*, std::thread*, std::allocator<std::thread> >(std::thread*, std::thread*, std::thread*, std::allocator<std::thread>&) [41]
+[100]    0.0    0.00    0.00       3         void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+                0.00    0.00       3/3           std::remove_reference<std::thread&>::type&& std::move<std::thread&>(std::thread&) [102]
+                0.00    0.00       3/3           void std::allocator_traits<std::allocator<std::thread> >::construct<std::thread, std::thread>(std::allocator<std::thread>&, std::thread*, std::thread&&) [96]
+                0.00    0.00       3/13          std::thread* std::__addressof<std::thread>(std::thread&) [14]
+                0.00    0.00       3/3           void std::allocator_traits<std::allocator<std::thread> >::destroy<std::thread>(std::allocator<std::thread>&, std::thread*) [94]
+-----------------------------------------------
+                0.00    0.00       3/3           std::vector<std::thread, std::allocator<std::thread> >::_M_check_len(unsigned long, char const*) const [91]
+[101]    0.0    0.00    0.00       3         unsigned long const& std::max<unsigned long>(unsigned long const&, unsigned long const&) [101]
+-----------------------------------------------
+                0.00    0.00       3/3           void std::__relocate_object_a<std::thread, std::thread, std::allocator<std::thread> >(std::thread*, std::thread*, std::allocator<std::thread>&) [100]
+[102]    0.0    0.00    0.00       3         std::remove_reference<std::thread&>::type&& std::move<std::thread&>(std::thread&) [102]
+-----------------------------------------------
+                0.00    0.00       3/3           std::thread::swap(std::thread&) [97]
+[103]    0.0    0.00    0.00       3         std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<std::thread::id> >, std::is_move_constructible<std::thread::id>, std::is_move_assignable<std::thread::id> >::value, void>::type std::swap<std::thread::id>(std::thread::id&, std::thread::id&) [103]
+                0.00    0.00       9/9           std::remove_reference<std::thread::id&>::type&& std::move<std::thread::id&>(std::thread::id&) [19]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__Z16parallelFunctioni [119]
+[104]    0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [104]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::thread>::allocator() [107]
+[105]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::thread>::new_allocator() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           std::allocator<std::thread>::~allocator() [108]
+[106]    0.0    0.00    0.00       1         __gnu_cxx::new_allocator<std::thread>::~new_allocator() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::_Vector_impl() [110]
+[107]    0.0    0.00    0.00       1         std::allocator<std::thread>::allocator() [107]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::thread>::new_allocator() [105]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::~_Vector_impl() [111]
+[108]    0.0    0.00    0.00       1         std::allocator<std::thread>::~allocator() [108]
+                0.00    0.00       1/1           __gnu_cxx::new_allocator<std::thread>::~new_allocator() [106]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::thread*>(std::thread*, std::thread*) [117]
+[109]    0.0    0.00    0.00       1         void std::_Destroy_aux<false>::__destroy<std::thread*>(std::thread*, std::thread*) [109]
+                0.00    0.00       4/13          std::thread* std::__addressof<std::thread>(std::thread&) [14]
+                0.00    0.00       4/4           void std::_Destroy<std::thread>(std::thread*) [84]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_base() [113]
+[110]    0.0    0.00    0.00       1         std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::_Vector_impl() [110]
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl_data::_Vector_impl_data() [112]
+                0.00    0.00       1/1           std::allocator<std::thread>::allocator() [107]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::~_Vector_base() [114]
+[111]    0.0    0.00    0.00       1         std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::~_Vector_impl() [111]
+                0.00    0.00       1/1           std::allocator<std::thread>::~allocator() [108]
+-----------------------------------------------
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::_Vector_impl() [110]
+[112]    0.0    0.00    0.00       1         std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl_data::_Vector_impl_data() [112]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::thread, std::allocator<std::thread> >::vector() [115]
+[113]    0.0    0.00    0.00       1         std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_base() [113]
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::_Vector_impl() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::thread, std::allocator<std::thread> >::~vector() [116]
+[114]    0.0    0.00    0.00       1         std::_Vector_base<std::thread, std::allocator<std::thread> >::~_Vector_base() [114]
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_impl::~_Vector_impl() [111]
+                0.00    0.00       1/4           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_deallocate(std::thread*, unsigned long) [63]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[115]    0.0    0.00    0.00       1         std::vector<std::thread, std::allocator<std::thread> >::vector() [115]
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::_Vector_base() [113]
+-----------------------------------------------
+                0.00    0.00       1/1           main [6]
+[116]    0.0    0.00    0.00       1         std::vector<std::thread, std::allocator<std::thread> >::~vector() [116]
+                0.00    0.00       1/7           std::_Vector_base<std::thread, std::allocator<std::thread> >::_M_get_Tp_allocator() [29]
+                0.00    0.00       1/1           void std::_Destroy<std::thread*, std::thread>(std::thread*, std::thread*, std::allocator<std::thread>&) [118]
+                0.00    0.00       1/1           std::_Vector_base<std::thread, std::allocator<std::thread> >::~_Vector_base() [114]
+-----------------------------------------------
+                0.00    0.00       1/1           void std::_Destroy<std::thread*, std::thread>(std::thread*, std::thread*, std::allocator<std::thread>&) [118]
+[117]    0.0    0.00    0.00       1         void std::_Destroy<std::thread*>(std::thread*, std::thread*) [117]
+                0.00    0.00       1/1           void std::_Destroy_aux<false>::__destroy<std::thread*>(std::thread*, std::thread*) [109]
+-----------------------------------------------
+                0.00    0.00       1/1           std::vector<std::thread, std::allocator<std::thread> >::~vector() [116]
+[118]    0.0    0.00    0.00       1         void std::_Destroy<std::thread*, std::thread>(std::thread*, std::thread*, std::allocator<std::thread>&) [118]
+                0.00    0.00       1/1           void std::_Destroy<std::thread*>(std::thread*, std::thread*) [117]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2022 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
