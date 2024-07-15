@@ -85,6 +85,12 @@ kill -SIGUSR2 <pid>
 
 Replace <pid> with the actual PID obtained from the pidof command.
 
+## Demo
+
+![Dynamic Profiling](https://github.com/user-attachments/assets/5111c3f2-f707-4743-9347-dff24f4cc96b)
+
+DynamicProfiling in action.
+
 ## Additional Notes
 
 - Ensure that the testcode executable has the necessary signal handlers to handle SIGUSR1 and SIGUSR2 for starting and stopping profiling respectively.
