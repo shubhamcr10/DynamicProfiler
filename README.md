@@ -1,10 +1,26 @@
-# Profiling Automation and Manual Execution Guide
+# Dynamic Profiling
 
-This guide provides instructions for both automated and manual options to start and stop profiling a process using `SIGUSR1` and `SIGUSR2` signals.
+This project demonstrates how to dynamically start and stop profiling a process with signals in Unix-like environments.
 
-## Automated Option
+## Project Overview
 
-### Terminal 1: Run the Executable
+The project includes:
+- `start_profiling.cpp`: C++ program to send `SIGUSR1` signal to start profiling.
+- `stop_profiling.cpp`: C++ program to send `SIGUSR2` signal to stop profiling.
+- `testcode.cpp`: Example executable that can be profiled using the provided signals.
+
+## Prerequisites
+
+- C++ compiler (GCC recommended)
+- Unix-like operating system (Linux, macOS)
+- Basic understanding of signal handling in C/C++
+- Installed libraries if using specific profiling tools (`callgrind`, `pthread`)
+
+## Usage
+
+### Automated Option
+
+#### Terminal 1: Run the Executable
 
 Ensure that the executable you want to profile (`testcode`) is running with .
 
@@ -12,7 +28,7 @@ Ensure that the executable you want to profile (`testcode`) is running with .
 ./testcode
 ```
 
-### Terminal 2: Build and Execute Profiling Scripts
+#### Terminal 2: Build and Execute Profiling Scripts
 
 1. Build the Profiling Programs:
 
@@ -31,9 +47,9 @@ g++ -o stop_profiling stop_profiling.cpp
 ./stop_profiling
 ```
 
-## Manual Option
+### Manual Option
 
-### Terminal 1: Compile and Run the Executable with Profiling
+#### Terminal 1: Compile and Run the Executable with Profiling
 
 1. Compile the Executable:
 
@@ -48,7 +64,7 @@ g++ -g -pthread -o testcode testcode.cpp -lpthread -lcallgrind
 ./testcode
 ```
 
-### Terminal 2: Manually Send Signals to Control Profiling
+#### Terminal 2: Manually Send Signals to Control Profiling
 1. Find the Process ID (PID) of the Executable:
 
 ```bash
