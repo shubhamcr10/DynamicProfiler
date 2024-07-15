@@ -1,0 +1,98 @@
+#installing
+sudo apt-get update
+sudo apt-get install linux-tools-common linux-tools-generic
+sudo apt-get install linux-tools-6.2.0-39-generic
+sudo apt-get install linux-tools-6.5.0-14-generic linux-cloud-tools-6.5.0-14-generic
+sudo apt-get install linux-tools-generic linux-cloud-tools-generic
+sudo apt-get install linux-tools-generic
+perf --version
+./your_program
+perf record -g -p $(pidof your_program)
+perf report
+perf report --stdio
+
+
+#setup 
+kernel.perf_event_paranoid = -1
+sudo sysctl -p
+
+cat /proc/sys/kernel/kptr_restrict
+sudo sysctl -w kernel.kptr_restrict=0
+sudo sysctl -w kernel.perf_event_paranoid=-1
+ls -l /proc/kallsyms
+
+
+#use case
+pgrep example
+pidof example
+
+****1st terminal
+./your_program
+
+****2nd terminal
+perf record -g -p 65286
+ctrl + c
+perf report
+perf report --stdio
+
+*****3rd terminal
+real time info
+###########watch -n 1 'perf top -p 65286'
+(perf top is similar to the top command but uses perf to display a dynamic view of the most consuming functions of the specified process in real-time,highlighting the functions that are consuming the most CPU or resources at any given moment.)
+(it provides a snapshot of software-level performance metrics at each interval.)
+
+###########watch -n 1 'perf stat -p 65286 sleep 1'
+(perf stat provides a one-time snapshot of various hardware and software performance statistics (such as CPU cycles, instructions, context switches, etc.))
+(it provides a snapshot of hardware-level performance metrics at each interval.)
+
+Unlike perf top, which continuously shows the most active functions, perf stat provides a snapshot of statistics over a short interval, giving an overview of the process's behavior during that time.
+
+###########pidstat -p 64622 1 (CPU utilization, memory, I/O)
+(information, including CPU utilization, memory, I/O, and more, at a system and process level.)
+
+perf top focuses on the most active functions within the process in real-time.
+perf stat focuses on specific hardware performance metrics for a specified duration.
+pidstat provides a broader range of statistics about the process and its interaction with the system.
+
+after exiting the exe
+############perf report -i perf.data (Self, Children, Command, Shared Object, Symbol)
+
+explaining the output for this case (time.cpp)
+*Samples and Events:The first line indicates that there were 2,000 samples of the 'cycles' event, The event count (approx.) is 1,345,931,558 cycles.
+*Function Call Stacks: Each line in the report represents a function call stack, For example, the first line shows that 63.00% of the samples have the entry_SYSCALL_64_after_hwframe function on the stack.
+*Hierarchy: The Self and Children columns indicate the percentage of samples where the function itself or its children are present on the stack.
+*Symbols and Shared Objects:The Shared Object and Symbol columns provide information about where in the code the samples are taken, For example, you see functions from the kernel ([kernel.kallsyms]) and from your application (example).
+*Library Functions:You also see functions from standard libraries (libstdc++.so.6.0.30, libc.so.6), indicating that the program spent time in standard library functions.
+*Kernel Functions:Functions prefixed with [kernel.kallsyms] are from the Linux kernel, Examples include system calls (do_syscall_64, __x64_sys_write) and kernel functions (vfs_write, tty_write).
+*User-Space Functions:Functions prefixed with [.] are functions from user space.
+For example, functions related to threading (std::thread::_Invoker, parallelFunction) and your own functions (process_output_block).
+
+
+
+#GRAPHS
+Setting up FlameGraph 
+git clone https://github.com/brendangregg/FlameGraph
+cd FlameGraph
+chmod +x stackcollapse-perf.pl flamegraph.pl
+
+Generating graph using Flamegraph
+###########perf script | ~/FlameGraph/stackcollapse-perf.pl | ~/FlameGraph/flamegraph.pl > perf.svg	
+
+**another way 
+exe on first 
+record on second terminal 
+on third terminal ./realtime_profiling.sh
+
+
+generating using gprof2dot
+after stopping the exe 
+###########sudo perf script -i perf.data -f | gprof2dot -f perf | dot -Tpng -o output.png
+(Function Call Relationships, Time Spent, Performance Bottlenecks)
+
+after stopping the exe 
+gprof2dot -f callgrind -o graph.dot callgrind.out 
+
+dot -Tpng -o graph.png graph.dot 
+
+generating using Python Script(matplotlib) for Continuous Visualization:
+
