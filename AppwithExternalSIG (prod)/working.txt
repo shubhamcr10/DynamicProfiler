@@ -1,3 +1,22 @@
+################### Automated Option
+
+#terminal 1
+
+Run exe
+
+#terminal 2 
+
+build(exe):
+
+g++ -o start_profiling start_profiling.cpp
+g++ -o stop_profiling stop_profiling.cpp
+
+./start_profiling
+./stop_profiling
+
+
+################### Manual Option
+
 #terminal 1
 
 g++ -g -pthread -o test test2.cpp // check to add -lpthread -lcallgrind
@@ -12,5 +31,3 @@ pidof <exename>
 kill -SIGUSR1 <pid>   // to start profiling
 
 kill -SIGUSR2 <pid>   // to stop profiling
-
-
